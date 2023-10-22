@@ -12,6 +12,7 @@
 		34FFC2C32AE5717900DFEE98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC2C22AE5717900DFEE98 /* Preview Assets.xcassets */; };
 		34FFC2CA2AE5719F00DFEE98 /* ViewModifierBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2C92AE5719F00DFEE98 /* ViewModifierBootcamp.swift */; };
 		34FFC2CC2AE578AF00DFEE98 /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2CB2AE578AF00DFEE98 /* ButtonStyleBootcamp.swift */; };
+		34FFC2CE2AE57EDE00DFEE98 /* AnyTransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2CD2AE57EDE00DFEE98 /* AnyTransitionBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		34FFC2C22AE5717900DFEE98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34FFC2C92AE5719F00DFEE98 /* ViewModifierBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootcamp.swift; sourceTree = "<group>"; };
 		34FFC2CB2AE578AF00DFEE98 /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
+		34FFC2CD2AE57EDE00DFEE98 /* AnyTransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				34FFC2BB2AE5717400DFEE98 /* SwiftfulAdvanceApp.swift */,
 				34FFC2C92AE5719F00DFEE98 /* ViewModifierBootcamp.swift */,
 				34FFC2CB2AE578AF00DFEE98 /* ButtonStyleBootcamp.swift */,
+				34FFC2CD2AE57EDE00DFEE98 /* AnyTransitionBootcamp.swift */,
 				34FFC2BF2AE5717900DFEE98 /* Assets.xcassets */,
 				34FFC2C12AE5717900DFEE98 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				34FFC2CC2AE578AF00DFEE98 /* ButtonStyleBootcamp.swift in Sources */,
 				34FFC2CA2AE5719F00DFEE98 /* ViewModifierBootcamp.swift in Sources */,
+				34FFC2CE2AE57EDE00DFEE98 /* AnyTransitionBootcamp.swift in Sources */,
 				34FFC2BC2AE5717500DFEE98 /* SwiftfulAdvanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

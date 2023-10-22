@@ -23,7 +23,7 @@ struct DefaultButtonViewModifier: ViewModifier {
     }
 }
 
-// option 2, using option 1
+// option 2, using option 1 & setting a default value
 extension View {
     func withDefaultButtonFormatting(backgroundColor: Color = .blue) -> some View {
         modifier(DefaultButtonViewModifier(backgroundColor: backgroundColor))

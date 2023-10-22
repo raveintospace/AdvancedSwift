@@ -6,5 +6,6 @@ Advanced SwiftUI course following SwiftfulThinking tutorial - https://www.youtub
 This app features: 
 <ul>
 <li>ViewModifier</li>
-<li>Custom ButtonStyles</li>
+<li>Custom ButtonStyle</li>
+<li>Custom AnyTransition</li>  
 </ul>

@@ -9,4 +9,5 @@ This app features:
 <li>Custom ButtonStyle</li>
 <li>Custom AnyTransition</li>
 <li>MatchedGeometryEffect</li>
+<li>Custom Shapes: Straight lines -> Triangle, Diamond, Trapezoid</li>
 </ul>

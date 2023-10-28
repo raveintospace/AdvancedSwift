@@ -14,4 +14,5 @@ This app features:
 <li>Animatable Data: Rectangle with one of its corners animated & Pacman moving its mouth</li>
 <li>Generics for models & views</li>
 <li>@ViewBuilder: Custom Generic Header View, Custom Generic Section View, Custom Generic HStack, </li>
+<li>PreferenceKey: Using it to understand how NavigationTitle works. Also to get Geometry & Scroll position from child view and use them in parent view.</li>
 </ul>

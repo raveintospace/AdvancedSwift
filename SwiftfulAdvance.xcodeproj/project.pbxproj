@@ -11,6 +11,9 @@
 		341BBEDC2AE6D8B200C64E59 /* CustomShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BBEDB2AE6D8B200C64E59 /* CustomShapesBootcamp.swift */; };
 		343510DF2AE829590029B9E7 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */; };
 		348027332AEC178A0089C5D2 /* AnimatableDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */; };
+		34DDF7E52AED18B300774E07 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF7E42AED18B300774E07 /* PreferenceKeyBootcamp.swift */; };
+		34DDF7E82AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF7E72AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift */; };
+		34DDF7EA2AED204100774E07 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF7E92AED204100774E07 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
 		34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */; };
 		34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */; };
 		34FFC2BC2AE5717500DFEE98 /* SwiftfulAdvanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2BB2AE5717400DFEE98 /* SwiftfulAdvanceApp.swift */; };
@@ -26,6 +29,9 @@
 		341BBEDB2AE6D8B200C64E59 /* CustomShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootcamp.swift; sourceTree = "<group>"; };
 		343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
 		348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataBootcamp.swift; sourceTree = "<group>"; };
+		34DDF7E42AED18B300774E07 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
+		34DDF7E72AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
+		34DDF7E92AED204100774E07 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootcamp.swift; sourceTree = "<group>"; };
 		34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		34FFC2B82AE5717400DFEE98 /* SwiftfulAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34DDF7E62AED1D3300774E07 /* PreferenceKeyBootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				34DDF7E42AED18B300774E07 /* PreferenceKeyBootcamp.swift */,
+				34DDF7E72AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift */,
+				34DDF7E92AED204100774E07 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
+			);
+			path = PreferenceKeyBootcamp;
+			sourceTree = "<group>";
+		};
 		34FFC2AF2AE5717400DFEE98 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +93,7 @@
 				348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */,
 				34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */,
 				34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */,
+				34DDF7E62AED1D3300774E07 /* PreferenceKeyBootcamp */,
 				34FFC2BF2AE5717900DFEE98 /* Assets.xcassets */,
 				34FFC2C12AE5717900DFEE98 /* Preview Content */,
 			);
@@ -168,8 +185,11 @@
 				348027332AEC178A0089C5D2 /* AnimatableDataBootcamp.swift in Sources */,
 				34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */,
 				34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */,
+				34DDF7E82AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				341BBEDA2AE6D27D00C64E59 /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				341BBEDC2AE6D8B200C64E59 /* CustomShapesBootcamp.swift in Sources */,
+				34DDF7E52AED18B300774E07 /* PreferenceKeyBootcamp.swift in Sources */,
+				34DDF7EA2AED204100774E07 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */,
 				343510DF2AE829590029B9E7 /* CustomCurvesBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

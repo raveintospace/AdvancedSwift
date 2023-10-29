@@ -14,14 +14,17 @@ struct AppTabBarView: View {
     
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) {
-            Color.blue
+            Color.red
                 .tabBarItem(tab: .home, selection: $tabSelection)
             
-            Color.red
+            Color.blue
                 .tabBarItem(tab: .favorites, selection: $tabSelection)
             
             Color.orange
                 .tabBarItem(tab: .profile, selection: $tabSelection)
+            
+            Color.green
+                .tabBarItem(tab: .messages, selection: $tabSelection)
         }
     }
 }

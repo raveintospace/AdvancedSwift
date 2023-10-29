@@ -16,4 +16,5 @@ This app features:
 <li>@ViewBuilder: Custom Generic Header View, Custom Generic Section View, Custom Generic HStack, </li>
 <li>PreferenceKey: Using it to understand how NavigationTitle works. Also to get Geometry & Scroll position from child view and use them in parent view.</li>
 <li>Custom TabBar: Two versions of a Custom Tab Bar that improve Apple's default, using Generics, @ViewBuilder, PreferenceKey & MatchedGeometryEffect.</li>
+<li>Custom NavigationView: Custom navigation bar (Title, subtitle, back button) & custom navigationLink, using Generics, @ViewBuilder & PreferenceKey.</li>
 </ul>

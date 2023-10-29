@@ -22,6 +22,7 @@
 		34ED091D2AEE71A2006D055D /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED091C2AEE71A2006D055D /* AppNavBarView.swift */; };
 		34ED091F2AEE72E3006D055D /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */; };
 		34ED09212AEE75A8006D055D /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */; };
+		34ED09232AEE7A59006D055D /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09222AEE7A59006D055D /* CustomNavView.swift */; };
 		34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */; };
 		34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */; };
 		34FFC2BC2AE5717500DFEE98 /* SwiftfulAdvanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2BB2AE5717400DFEE98 /* SwiftfulAdvanceApp.swift */; };
@@ -48,6 +49,7 @@
 		34ED091C2AEE71A2006D055D /* AppNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
 		34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		34ED09222AEE7A59006D055D /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootcamp.swift; sourceTree = "<group>"; };
 		34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		34FFC2B82AE5717400DFEE98 /* SwiftfulAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				34ED091C2AEE71A2006D055D /* AppNavBarView.swift */,
+				34ED09222AEE7A59006D055D /* CustomNavView.swift */,
 				34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */,
 				34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */,
 			);
@@ -227,6 +230,7 @@
 				34FFC2BC2AE5717500DFEE98 /* SwiftfulAdvanceApp.swift in Sources */,
 				348027332AEC178A0089C5D2 /* AnimatableDataBootcamp.swift in Sources */,
 				34DDF7EF2AED2C4200774E07 /* CustomTabBarView.swift in Sources */,
+				34ED09232AEE7A59006D055D /* CustomNavView.swift in Sources */,
 				34ED091F2AEE72E3006D055D /* CustomNavBarView.swift in Sources */,
 				34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */,
 				34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */,

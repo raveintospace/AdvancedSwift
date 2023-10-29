@@ -21,17 +21,19 @@ struct TabBarItemsPreferenceKey: PreferenceKey {
 struct TabBarItemViewModifier: ViewModifier {
     
     let tab: TabBarItem
+    @Binding var selection: TabBarItem  // change screen according to selected tab
     
     func body(content: Content) -> some View {
         content
+            .opacity(selection == tab ? 1.0 : 0.0)
             .preference(key: TabBarItemsPreferenceKey.self, value: [tab])
     }
 }
 
 extension View {
     
-    func tabBarItem(tab: TabBarItem) -> some View {
+    func tabBarItem(tab: TabBarItem, selection: Binding<TabBarItem>) -> some View {
         self
-            .modifier(TabBarItemViewModifier(tab: tab))
+            .modifier(TabBarItemViewModifier(tab: tab, selection: selection))
     }
 }

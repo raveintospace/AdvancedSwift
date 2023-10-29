@@ -29,9 +29,7 @@ struct CustomTabBarView: View {
 struct CustomTabBarView_Previews: PreviewProvider {
     
     static let tabs: [TabBarItem] = [
-        TabBarItem(iconName: "house", title: "Home", color: .red),
-        TabBarItem(iconName: "heart", title: "Favorites", color: .blue),
-        TabBarItem(iconName: "person", title: "Profile", color: .orange)
+        .home, .favorites, .profile
     ]
     
     static var previews: some View {
@@ -62,11 +60,4 @@ extension CustomTabBarView {
             selection = tab
         }
     }
-}
-
-// model for our func tabView, hashable to be used in ForEach
-struct TabBarItem: Hashable {
-    let iconName: String
-    let title: String
-    let color: Color
 }

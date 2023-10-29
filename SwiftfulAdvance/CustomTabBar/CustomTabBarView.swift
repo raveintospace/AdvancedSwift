@@ -12,10 +12,16 @@ struct CustomTabBarView: View {
     let tabs: [TabBarItem]
     @Binding var selection: TabBarItem
     @Namespace private var namespace
+    @State var localSelection: TabBarItem   // to be updated withAnimation
     
     var body: some View {
         // tabBarVersion1
         tabBarVersion2
+            .onChange(of: selection, perform: { value in
+                withAnimation(.easeInOut) {
+                    localSelection = selection
+                }
+            })
     }
 }
 
@@ -28,7 +34,7 @@ struct CustomTabBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Spacer()
-            CustomTabBarView(tabs: tabs, selection: .constant(tabs.first!))
+            CustomTabBarView(tabs: tabs, selection: .constant(tabs.first!), localSelection: tabs.first!)
         }
     }
 }
@@ -41,10 +47,10 @@ extension CustomTabBarView {
             Text(tab.title)
                 .font(.system(size: 10, weight: .semibold, design: .rounded))
         }
-        .foregroundColor(selection == tab ? tab.color : Color.gray)
+        .foregroundColor(localSelection == tab ? tab.color : Color.gray)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
-        .background(selection == tab ? tab.color.opacity(0.2) : Color.clear)
+        .background(localSelection == tab ? tab.color.opacity(0.2) : Color.clear)
         .cornerRadius(10)
     }
     
@@ -62,9 +68,7 @@ extension CustomTabBarView {
     }
     
     private func switchToTab(tab: TabBarItem) {
-        withAnimation(.easeInOut) {
-            selection = tab
-        }
+        selection = tab
     }
 }
 
@@ -76,12 +80,12 @@ extension CustomTabBarView {
             Text(tab.title)
                 .font(.system(size: 10, weight: .semibold, design: .rounded))
         }
-        .foregroundColor(selection == tab ? tab.color : Color.gray)
+        .foregroundColor(localSelection == tab ? tab.color : Color.gray)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
         .background(
             ZStack {
-                if selection == tab {
+                if localSelection == tab {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(tab.color.opacity(0.2))
                         .matchedGeometryEffect(id: "background_rectangle", in: namespace)

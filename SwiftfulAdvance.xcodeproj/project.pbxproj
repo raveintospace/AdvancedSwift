@@ -23,6 +23,8 @@
 		34ED091F2AEE72E3006D055D /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */; };
 		34ED09212AEE75A8006D055D /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */; };
 		34ED09232AEE7A59006D055D /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09222AEE7A59006D055D /* CustomNavView.swift */; };
+		34ED09252AEE7C38006D055D /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09242AEE7C38006D055D /* CustomNavLink.swift */; };
+		34ED09272AEE7EE8006D055D /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED09262AEE7EE8006D055D /* CustomNavBarPreferenceKeys.swift */; };
 		34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */; };
 		34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */; };
 		34FFC2BC2AE5717500DFEE98 /* SwiftfulAdvanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFC2BB2AE5717400DFEE98 /* SwiftfulAdvanceApp.swift */; };
@@ -50,6 +52,8 @@
 		34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
 		34ED09222AEE7A59006D055D /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		34ED09242AEE7C38006D055D /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		34ED09262AEE7EE8006D055D /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
 		34EF13622AEC1E2B00DB66CB /* GenericsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootcamp.swift; sourceTree = "<group>"; };
 		34EF13642AEC24CE00DB66CB /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		34FFC2B82AE5717400DFEE98 /* SwiftfulAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,8 @@
 				34ED09222AEE7A59006D055D /* CustomNavView.swift */,
 				34ED091E2AEE72E3006D055D /* CustomNavBarView.swift */,
 				34ED09202AEE75A8006D055D /* CustomNavBarContainerView.swift */,
+				34ED09242AEE7C38006D055D /* CustomNavLink.swift */,
+				34ED09262AEE7EE8006D055D /* CustomNavBarPreferenceKeys.swift */,
 			);
 			path = CustomNavBar;
 			sourceTree = "<group>";
@@ -234,6 +240,8 @@
 				34ED091F2AEE72E3006D055D /* CustomNavBarView.swift in Sources */,
 				34EF13652AEC24CE00DB66CB /* ViewBuilderBootcamp.swift in Sources */,
 				34EF13632AEC1E2B00DB66CB /* GenericsBootcamp.swift in Sources */,
+				34ED09252AEE7C38006D055D /* CustomNavLink.swift in Sources */,
+				34ED09272AEE7EE8006D055D /* CustomNavBarPreferenceKeys.swift in Sources */,
 				34DDF7E82AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift in Sources */,
 				341BBEDA2AE6D27D00C64E59 /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				34ED091A2AEE69BD006D055D /* TabBarItem.swift in Sources */,

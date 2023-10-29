@@ -33,3 +33,12 @@ struct CustomNavView_Previews: PreviewProvider {
         }
     }
 }
+
+// to enable a swipe left to go back to previous screen
+extension UINavigationController {
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = nil
+    }
+}

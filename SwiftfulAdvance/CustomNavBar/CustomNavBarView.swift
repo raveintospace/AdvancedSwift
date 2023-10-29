@@ -9,10 +9,13 @@ import SwiftUI
 
 struct CustomNavBarView: View {
     
+    // enables back button as a dismisser
+    @Environment(\.presentationMode) var presentationMode
+    
     // customizable properties for our NavBar
-    @State private var showBackButton: Bool = true
-    @State private var title: String = "Title" //""
-    @State private var subtitle: String? = "Subtitle" //nil
+    let title: String
+    let subtitle: String?
+    let showBackButton: Bool
     
     var body: some View {
         HStack {
@@ -38,10 +41,9 @@ struct CustomNavBarView: View {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            CustomNavBarView()
+            CustomNavBarView(title: "Title", subtitle: "Subtitle", showBackButton: true)
             Spacer()
         }
-        
     }
 }
 
@@ -49,7 +51,7 @@ extension CustomNavBarView {
     
     private var backButton: some View {
         Button(action: {
-            
+            presentationMode.wrappedValue.dismiss()
         }, label: {
             Image(systemName: "chevron.left")
         })

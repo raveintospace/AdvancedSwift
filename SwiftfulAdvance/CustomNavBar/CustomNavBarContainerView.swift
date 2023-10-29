@@ -7,14 +7,34 @@
 
 import SwiftUI
 
-struct CustomNavBarContainerView: View {
+// Content is a generic!
+struct CustomNavBarContainerView<Content: View>: View {
+    
+    let content: Content
+    
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 0) {
+            CustomNavBarView()
+            content
+                .frame(maxWidth: .infinity)
+                .frame(maxHeight: .infinity)
+        }
     }
 }
 
 struct CustomNavBarContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomNavBarContainerView()
+        CustomNavBarContainerView {
+            ZStack {
+                Color.green.ignoresSafeArea()
+                
+                Text("Hello, World!")
+                    .foregroundColor(.white)
+            }            
+        }
     }
 }

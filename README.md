@@ -18,4 +18,5 @@ This app features:
 <li>Custom TabBar: Two versions of a Custom Tab Bar that improve Apple's default, using Generics, @ViewBuilder, PreferenceKey & MatchedGeometryEffect.</li>
 <li>Custom NavigationView: Custom navigation bar (Title, subtitle, back button) & custom navigationLink, using Generics, @ViewBuilder & PreferenceKey.</li>
 <li>UIViewRepresentable: How to use UIKit views in SwiftUI -> Example of UITextField, with more custom features than SwiftUI's TextField.</li>
+<li>UIViewControllerRepresentable: How to use UIKit ViewControllers in SwiftUI -> Example of a BasicVC & UIImagePickerController</li>
 </ul>

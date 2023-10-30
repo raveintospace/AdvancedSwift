@@ -83,7 +83,7 @@ struct UITextFieldViewRepresentable: UIViewRepresentable {
         uiView.text = text
     }
     
-    // Bind the uikit element with our interface
+    // from UIKit to SwiftUI
     func makeCoordinator() -> Coordinator {
         return Coordinator(text: $text)
     }

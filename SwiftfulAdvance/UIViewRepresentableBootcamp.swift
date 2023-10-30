@@ -30,6 +30,7 @@ struct UIViewRepresentableBootcamp: View {
                 .background(Color.gray)
             }
         }
+        .padding()
     }
 }
 

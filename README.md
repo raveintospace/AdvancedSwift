@@ -22,4 +22,5 @@ This app features:
 <li>UIViewControllerRepresentable: How to use UIKit ViewControllers in SwiftUI -> Example of a BasicVC & UIImagePickerController</li>
 <br/>
 <li>Protocols: Examples of ColorTheme & DataSource</li>
+<li>Dependency Injection: MVVM example to fetch Typicode posts, using protocols, mock and Combine</li>
 </ul>

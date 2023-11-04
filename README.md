@@ -14,13 +14,14 @@ This app features:
 <li>Animatable Data: Rectangle with one of its corners animated & Pacman moving its mouth</li>
 <br/>  
 <li>Generics for models & views</li>
-<li>@ViewBuilder: Custom Generic Header View, Custom Generic Section View, Custom Generic HStack, </li>
-<li>PreferenceKey: Using it to understand how NavigationTitle works. Also to get Geometry & Scroll position from child view and use them in parent view.</li>
-<li>Custom TabBar: Two versions of a Custom Tab Bar that improve Apple's default, using Generics, @ViewBuilder, PreferenceKey & MatchedGeometryEffect.</li>
-<li>Custom NavigationView: Custom navigation bar (Title, subtitle, back button) & custom navigationLink, using Generics, @ViewBuilder & PreferenceKey.</li>
-<li>UIViewRepresentable: How to use UIKit views in SwiftUI -> Example of UITextField, with more custom features than SwiftUI's TextField.</li>
+<li>@ViewBuilder: Custom Generic Header View, Custom Generic Section View, Custom Generic HStack</li>
+<li>PreferenceKey: Using it to understand how NavigationTitle works. Also to get Geometry & Scroll position from child view and use them in parent view</li>
+<li>Custom TabBar: Two versions of a Custom Tab Bar that improve Apple's default, using Generics, @ViewBuilder, PreferenceKey & MatchedGeometryEffect</li>
+<li>Custom NavigationView: Custom navigation bar (Title, subtitle, back button) & custom navigationLink, using Generics, @ViewBuilder & PreferenceKey</li>
+<li>UIViewRepresentable: How to use UIKit views in SwiftUI -> Example of UITextField, with more custom features than SwiftUI's TextField</li>
 <li>UIViewControllerRepresentable: How to use UIKit ViewControllers in SwiftUI -> Example of a BasicVC & UIImagePickerController</li>
 <br/>
 <li>Protocols: Examples of ColorTheme & DataSource</li>
 <li>Dependency Injection: MVVM example to fetch Typicode posts, using protocols, mock and Combine</li>
+<li>Unit Testing: Testing a ViewModel and a DataService, using protocols, mocks and Combine</li>
 </ul>

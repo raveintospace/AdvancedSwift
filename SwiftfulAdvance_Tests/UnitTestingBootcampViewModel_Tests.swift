@@ -17,13 +17,18 @@ import XCTest
  */
 
 final class UnitTestingBootcampViewModel_Tests: XCTestCase {
+    
+    // initialize viewModel
+    var viewModel: UnitTestingBootcampViewModel?
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Called before the invocation of each test method in the class.
+        viewModel = UnitTestingBootcampViewModel(isPremium: Bool.random())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Called after the invocation of each test method in the class. Resets the initialized viewModel
+        viewModel = nil
     }
 
     func test_UnitTestingBootcampViewModel_isPremium_shouldBeTrue() {
@@ -106,6 +111,21 @@ final class UnitTestingBootcampViewModel_Tests: XCTestCase {
     func test_UnitTestingBootcampViewModel_dataArray_shouldNotAddBlankString() {
         // Given
         let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+        
+        // When we call the method
+        vm.addItem(item: "")
+        
+        // Then
+        XCTAssertTrue(vm.dataArray.isEmpty)
+    }
+    
+    // 2nd version
+    func test_UnitTestingBootcampViewModel_dataArray_shouldNotAddBlankString2() {
+        // Given, using the initialized viewModel
+        guard let vm = viewModel else {
+            XCTFail()
+            return
+        }
         
         // When we call the method
         vm.addItem(item: "")

@@ -18,6 +18,7 @@
 		342657852AF177EB002A43DB /* DependencyInjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342657842AF177EB002A43DB /* DependencyInjectionBootcamp.swift */; };
 		343510DF2AE829590029B9E7 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */; };
 		34748EBE2AF695AB0067A3D5 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34748EBD2AF695AB0067A3D5 /* NewMockDataService.swift */; };
+		34748EC02AF696090067A3D5 /* NewMockDataService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34748EBF2AF696090067A3D5 /* NewMockDataService_Tests.swift */; };
 		348027332AEC178A0089C5D2 /* AnimatableDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */; };
 		34DDF7E52AED18B300774E07 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF7E42AED18B300774E07 /* PreferenceKeyBootcamp.swift */; };
 		34DDF7E82AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF7E72AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift */; };
@@ -67,6 +68,7 @@
 		342657842AF177EB002A43DB /* DependencyInjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionBootcamp.swift; sourceTree = "<group>"; };
 		343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
 		34748EBD2AF695AB0067A3D5 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
+		34748EBF2AF696090067A3D5 /* NewMockDataService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Tests.swift; sourceTree = "<group>"; };
 		348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataBootcamp.swift; sourceTree = "<group>"; };
 		34DDF7E42AED18B300774E07 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		34DDF7E72AED1D4600774E07 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				342365FD2AF2CAB000B47DD8 /* SwiftfulAdvance_Tests.swift */,
 				342366042AF2CB3300B47DD8 /* UnitTestingBootcampViewModel_Tests.swift */,
+				34748EBF2AF696090067A3D5 /* NewMockDataService_Tests.swift */,
 			);
 			path = SwiftfulAdvance_Tests;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				342366052AF2CB3300B47DD8 /* UnitTestingBootcampViewModel_Tests.swift in Sources */,
 				342365FE2AF2CAB000B47DD8 /* SwiftfulAdvance_Tests.swift in Sources */,
+				34748EC02AF696090067A3D5 /* NewMockDataService_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

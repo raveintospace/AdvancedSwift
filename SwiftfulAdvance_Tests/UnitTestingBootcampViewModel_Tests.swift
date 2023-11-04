@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import SwiftfulAdvance
+import Combine
 
 /*
  Naming structure: test_UnitOfWork_StateUnderTest_ExpectedBehavior -> test_movieViewModel_pagesEnded_shouldBeTrue()
@@ -21,6 +22,9 @@ final class UnitTestingBootcampViewModel_Tests: XCTestCase {
     // initialize viewModel
     var viewModel: UnitTestingBootcampViewModel?
 
+    // cancellables to test Combine methods
+    var cancellables = Set<AnyCancellable>()
+    
     override func setUpWithError() throws {
         // Called before the invocation of each test method in the class.
         viewModel = UnitTestingBootcampViewModel(isPremium: Bool.random())
@@ -263,6 +267,51 @@ final class UnitTestingBootcampViewModel_Tests: XCTestCase {
             // test fails if we get here, but we shouldn't because random string is in dataArray
             XCTFail()
         }
+    }
+    
+// MARK: - DataService tests
+    func test_UnitTestingBootcampViewModel_downloadWithEscaping_shouldReturnItems() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+        
+        // When we call the method
+        let expectation = XCTestExpectation(description: "Should return items after 3 seconds.")
+        
+        // subscribe to array
+        vm.$dataArray
+            .dropFirst()        // first time array is initialized as empty array
+            .sink { returnedItems in
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        vm.downloadWithEscaping()
+        
+        // Then (check that we are downloading items after the async)
+        wait(for: [expectation], timeout: 5)
+        XCTAssertGreaterThan(vm.dataArray.count, 0)
+    }
+    
+    func test_UnitTestingBootcampViewModel_downloadWithCombine_shouldReturnItems() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+        
+        // When we call the method
+        let expectation = XCTestExpectation(description: "Should return items after a second.")
+        
+        // subscribe to array
+        vm.$dataArray
+            .dropFirst()        // first time array is initialized as empty array
+            .sink { returnedItems in
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        vm.downloadWithCombine()
+        
+        // Then (check that we are downloading items after the async)
+        wait(for: [expectation], timeout: 5)
+        XCTAssertGreaterThan(vm.dataArray.count, 0)
     }
 
 }

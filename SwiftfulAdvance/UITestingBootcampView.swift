@@ -63,12 +63,13 @@ extension UITestingBootcampView {
                 .padding()
                 .background(Color.white)
                 .cornerRadius(10)
+                .accessibilityIdentifier("SignUpTextField") // for UI testing
             
-            Button {
+            Button(action: {
                 withAnimation(.spring()) {
                     vm.signUpButtonPressed()
                 }
-            } label: {
+            }, label: {
                 Text("Sign up")
                     .font(.headline)
                     .padding()
@@ -76,7 +77,8 @@ extension UITestingBootcampView {
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
-            }
+            })
+            .accessibilityIdentifier("SignUpButton")
         }
         .padding()
     }

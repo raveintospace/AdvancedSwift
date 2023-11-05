@@ -17,22 +17,62 @@ import XCTest
 
 final class UITestingBootcampView_Tests: XCTestCase {
 
+    // reference to our app
+    let app = XCUIApplication()
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
 
         // launch our app to run ui test
-        XCUIApplication().launch()
+        app.launch()
     }
 
     override func tearDownWithError() throws {
     }
     
     func test_UITestingBootcampView_signUpButton_shouldNotSignIn() {
+        // Given
+        let textfield = app.textFields["SignUpTextField"]
         
+        // When
+        textfield.tap()
+        
+        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        returnButton.tap()
+        
+        let signUpButton = app.buttons["SignUpButton"]
+        signUpButton.tap()
+        
+        let navBar = app.navigationBars["Welcome"]
+        
+        // Then
+        XCTAssertFalse(navBar.exists)
     }
     
     func test_UITestingBootcampView_signUpButton_shouldSignIn() {
+        // Given
+        let textfield = app.textFields["SignUpTextField"]
         
+        // When
+        textfield.tap()
+        
+        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        keyA.tap()
+        
+        let keya = app.keys["a"]
+        keya.tap()
+        keya.tap()
+        
+        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        returnButton.tap()
+        
+        let signUpButton = app.buttons["SignUpButton"]
+        signUpButton.tap()
+        
+        let navBar = app.navigationBars["Welcome"]
+        
+        // Then
+        XCTAssertTrue(navBar.exists)
     }
 
 }

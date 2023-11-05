@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftfulAdvanceApp: App {
     var body: some Scene {
         WindowGroup {
-            AnyTransitionBootcamp()
+            UITestingBootcampView()
         }
     }
 }

@@ -17,6 +17,7 @@
 		342657832AF16EC1002A43DB /* ProtocolsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342657822AF16EC1002A43DB /* ProtocolsBootcamp.swift */; };
 		342657852AF177EB002A43DB /* DependencyInjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342657842AF177EB002A43DB /* DependencyInjectionBootcamp.swift */; };
 		343510DF2AE829590029B9E7 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */; };
+		34464A792AF7AC520095B275 /* UITestingBootcampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34464A782AF7AC520095B275 /* UITestingBootcampView.swift */; };
 		34748EBE2AF695AB0067A3D5 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34748EBD2AF695AB0067A3D5 /* NewMockDataService.swift */; };
 		34748EC02AF696090067A3D5 /* NewMockDataService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34748EBF2AF696090067A3D5 /* NewMockDataService_Tests.swift */; };
 		348027332AEC178A0089C5D2 /* AnimatableDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */; };
@@ -67,6 +68,7 @@
 		342657822AF16EC1002A43DB /* ProtocolsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsBootcamp.swift; sourceTree = "<group>"; };
 		342657842AF177EB002A43DB /* DependencyInjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionBootcamp.swift; sourceTree = "<group>"; };
 		343510DE2AE829590029B9E7 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
+		34464A782AF7AC520095B275 /* UITestingBootcampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView.swift; sourceTree = "<group>"; };
 		34748EBD2AF695AB0067A3D5 /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		34748EBF2AF696090067A3D5 /* NewMockDataService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Tests.swift; sourceTree = "<group>"; };
 		348027322AEC178A0089C5D2 /* AnimatableDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataBootcamp.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				342657822AF16EC1002A43DB /* ProtocolsBootcamp.swift */,
 				342657842AF177EB002A43DB /* DependencyInjectionBootcamp.swift */,
 				342365F22AF2C86E00B47DD8 /* UnitTestingBootcamp */,
+				34464A782AF7AC520095B275 /* UITestingBootcampView.swift */,
 				34FFC2BF2AE5717900DFEE98 /* Assets.xcassets */,
 				34FFC2C12AE5717900DFEE98 /* Preview Content */,
 			);
@@ -334,6 +337,7 @@
 			files = (
 				342365F62AF2C9D900B47DD8 /* UnitTestingBootcampViewModel.swift in Sources */,
 				34748EBE2AF695AB0067A3D5 /* NewMockDataService.swift in Sources */,
+				34464A792AF7AC520095B275 /* UITestingBootcampView.swift in Sources */,
 				34ED091D2AEE71A2006D055D /* AppNavBarView.swift in Sources */,
 				3412E62B2AF0244F00D29709 /* UIViewControllerRepresentableBootcamp.swift in Sources */,
 				342365F42AF2C88300B47DD8 /* UnitTestingBootcampView.swift in Sources */,

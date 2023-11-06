@@ -23,7 +23,11 @@ final class UITestingBootcampView_Tests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
 
-        // launch our app to run ui test
+        // launch our app to run UI Test
+        
+        // app.launchArguments = ["-UITest_startSignedIn"] -> Uncomment to test Arguments Passed On Launch
+        // app.launchEnvironment = ["-UITest_startSignedIn2" : "true"] -> Uncomment to test Environment Variables
+        
         app.launch()
     }
 
@@ -99,6 +103,21 @@ final class UITestingBootcampView_Tests: XCTestCase {
         let navBar = app.navigationBars["Welcome"]
         XCTAssertTrue(navBar.exists)
     }
+    
+    /*
+    Uncomment to test Arguments Passed On Launch
+    func test_UITestingBootcampView_navigationLinkToDestination_shouldNavigateToDestinationAndGoBack2() {
+        // Given
+        // we don't need signUpAndSignIn because we are already logged in using our argument on launch
+        
+        // When
+        tapNavigationLink(shouldDismissDestination: true)
+        
+        // Then
+        let navBar = app.navigationBars["Welcome"]
+        XCTAssertTrue(navBar.exists)
+    }
+     */
 }
 
 

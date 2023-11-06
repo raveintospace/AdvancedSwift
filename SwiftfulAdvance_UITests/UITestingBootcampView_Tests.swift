@@ -32,17 +32,9 @@ final class UITestingBootcampView_Tests: XCTestCase {
     
     func test_UITestingBootcampView_signUpButton_shouldNotSignIn() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: false)
         
         // When
-        textfield.tap()
-        
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        returnButton.tap()
-        
-        let signUpButton = app.buttons["SignUpButton"]
-        signUpButton.tap()
-        
         let navBar = app.navigationBars["Welcome"]
         
         // Then
@@ -51,24 +43,9 @@ final class UITestingBootcampView_Tests: XCTestCase {
     
     func test_UITestingBootcampView_signUpButton_shouldSignIn() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: true)
         
         // When
-        textfield.tap()
-        
-        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        keyA.tap()
-        
-        let keya = app.keys["a"]
-        keya.tap()
-        keya.tap()
-        
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        returnButton.tap()
-        
-        let signUpButton = app.buttons["SignUpButton"]
-        signUpButton.tap()
-        
         let navBar = app.navigationBars["Welcome"]
         
         // Then
@@ -77,144 +54,98 @@ final class UITestingBootcampView_Tests: XCTestCase {
     
     func test_UITestingBootcampView_showAlertButton_shouldDisplayAlert() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: true)
         
         // When
-        textfield.tap()
-        
-        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        keyA.tap()
-        
-        let keya = app.keys["a"]
-        keya.tap()
-        keya.tap()
-        
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        returnButton.tap()
-        
-        let signUpButton = app.buttons["SignUpButton"]
-        signUpButton.tap()
-        
-        let navBar = app.navigationBars["Welcome"]
-        XCTAssertTrue(navBar.exists)
-        
-        let showAlertButton = app.buttons["ShowAlertButton"]
-        showAlertButton.tap()
-        
-        let alert = app.alerts.firstMatch
+        tapAlertButton(shouldDismissAlert: false)
         
         //Then
+        let alert = app.alerts.firstMatch
         XCTAssertTrue(alert.exists)
     }
     
     func test_UITestingBootcampView_showAlertButton_shouldDisplayAndDismissAlert() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: true)
         
         // When
-        textfield.tap()
-        
-        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        keyA.tap()
-        
-        let keya = app.keys["a"]
-        keya.tap()
-        keya.tap()
-        
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        returnButton.tap()
-        
-        let signUpButton = app.buttons["SignUpButton"]
-        signUpButton.tap()
-        
-        let navBar = app.navigationBars["Welcome"]
-        XCTAssertTrue(navBar.exists)
-        
-        let showAlertButton = app.buttons["ShowAlertButton"]
-        showAlertButton.tap()
-        
-        let alert = app.alerts.firstMatch
-        XCTAssertTrue(alert.exists)
-        
-        let alertOKButton = alert.buttons["OK"]
-        let alertOKButtonExists = alertOKButton.waitForExistence(timeout: 5)
-        XCTAssertTrue(alertOKButtonExists)
-        
-        alertOKButton.tap()
-        
-        let alertExists = alert.waitForExistence(timeout: 5)
+        tapAlertButton(shouldDismissAlert: true)
         
         // Then
+        let alertExists = app.alerts.firstMatch.waitForExistence(timeout: 5)
         XCTAssertFalse(alertExists)
-        XCTAssertFalse(alert.exists)
     }
     
     func test_UITestingBootcampView_navigationLinkToDestination_shouldNavigateToDestination() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: true)
         
         // When
-        textfield.tap()
-        
-        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        keyA.tap()
-        
-        let keya = app.keys["a"]
-        keya.tap()
-        keya.tap()
-        
-        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        returnButton.tap()
-        
-        let signUpButton = app.buttons["SignUpButton"]
-        signUpButton.tap()
-        
-        let navBar = app.navigationBars["Welcome"]
-        XCTAssertTrue(navBar.exists)
-        
-        let navLinkButton = app/*@START_MENU_TOKEN@*/.buttons["NavigationLinkToDestination"]/*[[".buttons[\"Navigate\"]",".buttons[\"NavigationLinkToDestination\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        navLinkButton.tap()
-        
-        let destinationText = app.staticTexts["Destination"]
+        tapNavigationLink(shouldDismissDestination: false)
         
         // Then
+        let destinationText = app.staticTexts["Destination"]
         XCTAssertTrue(destinationText.exists)
     }
     
     func test_UITestingBootcampView_navigationLinkToDestination_shouldNavigateToDestinationAndGoBack() {
         // Given
-        let textfield = app.textFields["SignUpTextField"]
+        signUpAndSignIn(shouldTypeOnKeyboard: true)
         
         // When
+        tapNavigationLink(shouldDismissDestination: true)
+        
+        // Then
+        let navBar = app.navigationBars["Welcome"]
+        XCTAssertTrue(navBar.exists)
+    }
+}
+
+
+// MARK: - Modular functions
+
+extension UITestingBootcampView_Tests {
+    func signUpAndSignIn(shouldTypeOnKeyboard: Bool) {
+        let textfield = app.textFields["SignUpTextField"]
         textfield.tap()
         
-        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        keyA.tap()
-        
-        let keya = app.keys["a"]
-        keya.tap()
-        keya.tap()
+        if shouldTypeOnKeyboard {
+            let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+            keyA.tap()
+            
+            let keya = app.keys["a"]
+            keya.tap()
+            keya.tap()
+        }
         
         let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
         returnButton.tap()
         
         let signUpButton = app.buttons["SignUpButton"]
         signUpButton.tap()
+    }
+    
+    func tapAlertButton(shouldDismissAlert: Bool) {
+        let showAlertButton = app.buttons["ShowAlertButton"]
+        showAlertButton.tap()
         
-        let navBar = app.navigationBars["Welcome"]
-        XCTAssertTrue(navBar.exists)
-        
+        if shouldDismissAlert {
+            let alert = app.alerts.firstMatch
+            let alertOKButton = alert.buttons["OK"]
+            let alertOKButtonExists = alertOKButton.waitForExistence(timeout: 5)
+            XCTAssertTrue(alertOKButtonExists)
+            
+            alertOKButton.tap()
+        }
+    }
+    
+    func tapNavigationLink(shouldDismissDestination: Bool) {
         let navLinkButton = app/*@START_MENU_TOKEN@*/.buttons["NavigationLinkToDestination"]/*[[".buttons[\"Navigate\"]",".buttons[\"NavigationLinkToDestination\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         navLinkButton.tap()
         
-        let destinationText = app.staticTexts["Destination"]
-        XCTAssertTrue(destinationText.exists)
-        
-        let backButton = app.navigationBars.buttons["Welcome"]
-        backButton.tap()
-        
-        // Then
-        XCTAssertTrue(navBar.exists)
+        if shouldDismissDestination {
+            let backButton = app.navigationBars.buttons["Welcome"]
+            backButton.tap()
+        }
     }
-
 }

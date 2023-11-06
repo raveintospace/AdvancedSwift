@@ -148,5 +148,73 @@ final class UITestingBootcampView_Tests: XCTestCase {
         XCTAssertFalse(alertExists)
         XCTAssertFalse(alert.exists)
     }
+    
+    func test_UITestingBootcampView_navigationLinkToDestination_shouldNavigateToDestination() {
+        // Given
+        let textfield = app.textFields["SignUpTextField"]
+        
+        // When
+        textfield.tap()
+        
+        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        keyA.tap()
+        
+        let keya = app.keys["a"]
+        keya.tap()
+        keya.tap()
+        
+        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        returnButton.tap()
+        
+        let signUpButton = app.buttons["SignUpButton"]
+        signUpButton.tap()
+        
+        let navBar = app.navigationBars["Welcome"]
+        XCTAssertTrue(navBar.exists)
+        
+        let navLinkButton = app/*@START_MENU_TOKEN@*/.buttons["NavigationLinkToDestination"]/*[[".buttons[\"Navigate\"]",".buttons[\"NavigationLinkToDestination\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        navLinkButton.tap()
+        
+        let destinationText = app.staticTexts["Destination"]
+        
+        // Then
+        XCTAssertTrue(destinationText.exists)
+    }
+    
+    func test_UITestingBootcampView_navigationLinkToDestination_shouldNavigateToDestinationAndGoBack() {
+        // Given
+        let textfield = app.textFields["SignUpTextField"]
+        
+        // When
+        textfield.tap()
+        
+        let keyA = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        keyA.tap()
+        
+        let keya = app.keys["a"]
+        keya.tap()
+        keya.tap()
+        
+        let returnButton = app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        returnButton.tap()
+        
+        let signUpButton = app.buttons["SignUpButton"]
+        signUpButton.tap()
+        
+        let navBar = app.navigationBars["Welcome"]
+        XCTAssertTrue(navBar.exists)
+        
+        let navLinkButton = app/*@START_MENU_TOKEN@*/.buttons["NavigationLinkToDestination"]/*[[".buttons[\"Navigate\"]",".buttons[\"NavigationLinkToDestination\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        navLinkButton.tap()
+        
+        let destinationText = app.staticTexts["Destination"]
+        XCTAssertTrue(destinationText.exists)
+        
+        let backButton = app.navigationBars.buttons["Welcome"]
+        backButton.tap()
+        
+        // Then
+        XCTAssertTrue(navBar.exists)
+    }
 
 }

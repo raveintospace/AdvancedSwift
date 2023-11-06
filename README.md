@@ -23,5 +23,6 @@ This app features:
 <br/>
 <li>Protocols: Examples of ColorTheme & DataSource</li>
 <li>Dependency Injection: MVVM example to fetch Typicode posts, using protocols, mock and Combine</li>
-<li>Unit Testing: Testing a ViewModel and a DataService, using protocols, mocks and Combine</li>
+<li>Unit Tests: Testing a ViewModel and a DataService, using protocols, mocks and Combine</li>
+<li>UI Tests: Testing an app that signs up a user, including Arguments Passed On Launch</li>
 </ul>

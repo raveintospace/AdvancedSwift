@@ -1,6 +1,6 @@
 # AdvancedSwift
 <br/>
-Advanced SwiftUI course following SwiftfulThinking tutorial - https://shorturl.at/hlrN0
+Advanced SwiftUI course following Swiftful Thinking tutorial - https://shorturl.at/hlrN0
 <br/>
 <br/>
 This app features: 

@@ -2,7 +2,7 @@
 //  ViewModifierBootcamp.swift
 //  SwiftfulAdvance
 //  https://youtu.be/MQl4DlDf_5k?si=tz9ReyKZTAuVgnsn
-//  Created by Uri on 22/10/23.
+//  Created by Uri on 22/10/23
 //
 
 import SwiftUI
